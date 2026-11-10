@@ -5,3 +5,8 @@
 @media print{:root{color-scheme:light;--bg:#fff;--text:#111;--muted:#444;--accent:#222;--line:#ccc}body{font-size:11pt}.container{width:100%}.site-header,.site-footer,.contents,.back-top,.skip-link,.orb{display:none}.legal{padding:0}.legal-heading{padding-bottom:1rem}h1{font-size:30pt}.legal-layout{display:block}.legal-copy{max-width:none}.legal-copy section{margin-bottom:1rem;padding-bottom:1rem}h2{break-after:avoid}p,dd{orphans:3;widows:3}a{color:#111}.app-card{display:block;background:#fff}}
 
 .resource-links{margin-top:3.5rem;padding-top:2rem;border-top:1px solid var(--line)}.resource-links h2{font-size:1.6rem}.resource-grid{display:flex;flex-wrap:wrap;gap:1rem 2rem}.resource-grid a{display:inline-block;padding:.4rem 0}.site-header nav{flex-wrap:wrap;justify-content:flex-end;gap:.5rem 1.3rem}.site-header nav a{white-space:nowrap}
+
+/* Espacement explicite des liens des documents, y compris sur petits écrans */
+.resource-links .resource-grid{display:flex;flex-wrap:wrap;column-gap:2rem;row-gap:.8rem;align-items:center}
+.resource-links .resource-grid a{display:inline-block;padding:.45rem .15rem;white-space:normal}
+@media(max-width:520px){.resource-links .resource-grid{flex-direction:column;align-items:flex-start;gap:.65rem}}
